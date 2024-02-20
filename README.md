@@ -14,5 +14,5 @@ Página de estudo de previsão do tempo, usando elementos externos para busca.
 
 ## Screenshots
 
-![App Screenshot](https://https://github.com/Marcelitos77/PrevisaoDoTempo/blob/main/capa.png)
+![App Screenshot](https://github.com/Marcelitos77/PrevisaoDoTempo/blob/main/capa.png)
 
