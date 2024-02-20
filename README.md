@@ -2,6 +2,8 @@
 
 Página de estudo de previsão do tempo, usando elementos externos para busca. 
 
+deploy: https://previsao-do-tempo-beta-lyart.vercel.app/
+
 
 ## 🛠 Habilidades
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
