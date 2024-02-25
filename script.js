@@ -1,6 +1,4 @@
-
 let chave = "6c9bb1b4cac9d1e0f2461f6b8ca7aeb5"
-
 
 function colocarNaTela(dados){
     console.log(dados)
@@ -20,12 +18,22 @@ async function buscarCidade(cidade){
     )
     .then(resposta => resposta.json())
 
-    colocarNaTela(dados)
+    return dados
 }
 
 
 function cliqueiNoBotao(){
    let cidade = document.querySelector(".input-cidade").value
-
-   buscarCidade(cidade)
+   let loading = document.querySelector(".loading")
+   loading.style.display = "block" // mostra a tela de carregamento
+   Promise.all([buscarCidade(cidade)]) // espera a resposta da API
+   .then(dados => {
+       loading.style.display = "none" // esconde a tela de carregamento
+       colocarNaTela(dados[0]) // coloca os dados na tela
+   })
+   .catch(erro => {
+       console.error(erro)
+       loading.style.display = "none" // esconde a tela de carregamento
+       alert("Ocorreu um erro ao buscar a cidade") // mostra uma mensagem de erro
+   })
 }
