@@ -19,23 +19,31 @@ body {
 }
 
 .caixa-maior {
-    background-color: #000000;/*  Troca cor de fundo  */
-    width: 95%; /*  Largura  */
-    max-width: 420px; /*  Largura  Maxima */
-    opacity: 0.8;/* transparencia do item */
+    background-color: #000000;
+    /*  Troca cor de fundo  */
+    width: 95%;
+    /*  Largura  */
+    max-width: 420px;
+    /*  Largura  Maxima */
+    opacity: 0.8;
+    /* transparencia do item */
     padding: 20px;
     border-radius: 25px;
 }
 
 input {
-    border: none;/* borda do elemento */
-    outline: none;/* borda quando seleciona o elemento */
-    padding: 10px;/* espaçamento interno */
-    border-radius: 24px;/* arredonda as bordas */
+    border: none;
+    /* borda do elemento */
+    outline: none;
+    /* borda quando seleciona o elemento */
+    padding: 10px;
+    /* espaçamento interno */
+    border-radius: 24px;
+    /* arredonda as bordas */
     font-size: 20px;
     background-color: #7c7c7c2b;
     color: #ffffff;
-    width: calc( 100% - 100px);
+    width: calc(100% - 100px);
 }
 
 button {
@@ -68,7 +76,8 @@ button:hover {
 
 h2 {
     color: white;
-    font-size: 28px; /* tamanho do texto */
+    font-size: 28px;
+    /* tamanho do texto */
 }
 
 .temp {
@@ -79,10 +88,41 @@ h2 {
 .descricao {
     color: #ffffff;
     margin-left: 20px;
-    text-transform: capitalize; /* Deixa a primeira letra maiuscula*/
+    text-transform: capitalize;
+    /* Deixa a primeira letra maiuscula*/
 }
 
 .umidade {
     color: #ffffff;
     margin-top: 30px;
+}
+
+.loading {
+    display: none;
+    /* esconde o elemento por padrão */
+    position: fixed;
+    /* posiciona o elemento sobre o conteúdo */
+    top: 0;
+    /* alinha o elemento no topo da página */
+    left: 0;
+    /* alinha o elemento à esquerda da página */
+    width: 100%;
+    /* define a largura do elemento como 100% da página */
+    height: 100%;
+    /* define a altura do elemento como 100% da página */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* define a cor de fundo do elemento como preto com 50% de opacidade */
+    z-index: 9999;
+    /* define a ordem de empilhamento do elemento como a mais alta possível */
+}
+
+.loading p {
+    color: white;
+    /* define a cor do texto como branco */
+    font-size: 32px;
+    /* define o tamanho da fonte como 32px */
+    text-align: center;
+    /* alinha o texto ao centro do elemento */
+    margin-top: 50%;
+    /* define a margem superior do texto como 50% da altura do elemento */
 }
